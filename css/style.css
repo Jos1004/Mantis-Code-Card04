@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,body {
     margin: 0;
     height: 100%;
@@ -190,4 +191,198 @@ span:hover{
     .card-text{
         width: 80%;
     }
+=======
+html,body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #0D192C;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.card{
+    width: 275px;
+    height: 444px;
+    background-color: #15263F;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.card-content, .filter, img, .card-body, #card-title, .card-text, .status, .dados, #combined, #clock, #text1, #text2, .card-footer, #oval{
+    margin: 0;
+}
+
+.card-header, .card-content, .filter{
+    width: 236px;
+    height: 236px;
+    border-radius: 8px;
+}
+
+.card-content, .filter, img{
+    position: absolute;
+}
+
+.card-header{
+    margin:15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-content{
+    background: url("../images/Rectangle Copy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 0;
+}
+
+#eye{
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    z-index: 10;
+}
+
+.filter{
+    background-color: cyan;
+    opacity: 0;
+    z-index: 5;
+}
+
+.card-header:hover{
+    cursor: pointer;
+    .filter{
+        opacity: 50%;
+    }
+
+    #eye{
+        opacity: 100%;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 236px;
+    height: 122px;
+    gap: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2E405A;
+}
+
+#card-title{
+    color: white;
+    font-weight: 500;
+}
+
+#card-title:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+.card-text{
+    font-size: 14px;
+    color: #8BACD9;
+    font-weight: 200;
+}
+
+.status{
+    width: 235px;
+    height: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dados{
+    height: 20px;
+    width: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#combined{
+    width: 10px;
+    height: 15px;
+}
+
+#clock{
+    width: 15px;
+    height: 15px;
+}
+
+#text1, #text2{
+    font-size: 13px;
+}
+
+#text1{
+    color: cyan;
+    font-weight: 500;
+    margin-left:15px;
+}
+
+#text2{
+    color: #8BACD9;
+    font-weight: 300;
+    margin-left:20px;
+}
+
+.card-footer{
+    width: 236px;
+    height: 39px;
+    position: absolute;
+    transform: translateY(25.5em);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+#oval{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 24px;
+    height: 24px;
+}
+
+#text3{
+  font-weight: 300;
+  color: #8BACD9;
+  font-size: 13px;
+  margin: 0 0 0 40px ;
+}
+
+span{
+    color:white;
+}
+
+span:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .card-text{
+        width: 80%;
+    }
+>>>>>>> 7b6a7a5ff17954a1706d1963d78c21ebfcbadae2
 }
